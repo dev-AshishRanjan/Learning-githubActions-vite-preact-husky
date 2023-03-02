@@ -1,9 +1,13 @@
 import { useState } from "preact/hooks";
 const Todo = () => {
+  const [data, setData] = useState([]);
   const [input, setInput] = useState();
   const onSubmitFn = (e) => {
-    alert("Submitted a todo");
     e.preventDefault();
+    setData((prev) => {
+      return [...prev, input];
+    });
+    setInput("");
   };
 
   const onInputFn = (e) => {
@@ -12,9 +16,18 @@ const Todo = () => {
   };
   return (
     <div class="todo">
+      <div class="render">
+        {data.length > 0 &&
+          data.map((ele, index) => {
+            return (
+              <div class="element" key={index}>
+                {ele}
+              </div>
+            );
+          })}
+      </div>
       <form onSubmit={onSubmitFn}>
         <input type="text" value={input} onInput={onInputFn} />
-        <p>You typed this value: {input}</p>
         <button type="submit">Submit</button>
       </form>
     </div>
