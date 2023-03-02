@@ -3,4 +3,3 @@
 
 npx validate-branch-name
 npx lint-staged
-# npm test
