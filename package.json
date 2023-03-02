@@ -10,7 +10,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.js": "prettier --write --ignore-unknown"
+    "**/*.jsx": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "husky": "^8.0.3",
