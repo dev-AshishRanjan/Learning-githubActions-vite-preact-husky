@@ -8,10 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "pretty":"prettier --write --ignore-unknown"
+    "pretty": "prettier --write --ignore-unknown"
   },
   "lint-staged": {
-    "**/*.jsx": "prettier --write --ignore-unknown"
+    "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "husky": "^8.0.3",
