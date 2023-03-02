@@ -7,18 +7,18 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --color-1: #FFD4D4;
-    --color-2: #FFFFE8;
-    --color-3: #CDE990;
-    --color-4: #AACB73;
+    --color-1: #ffd4d4;
+    --color-2: #ffffe8;
+    --color-3: #cde990;
+    --color-4: #aacb73;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-1: #2E0249;
-    --color-2: #570A57;
-    --color-3: #A91079;
-    --color-4: #F806CC;
+    --color-1: #2e0249;
+    --color-2: #570a57;
+    --color-3: #a91079;
+    --color-4: #f806cc;
   }
 }
